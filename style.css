@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 50%);
+}
+
+.container {
+    width: 500px;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#display {
+    width: 85%;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 30%);
+}
+
+.orange_btn {
+    background-color: hsl(39, 100%, 50%);
+}
+
+.orange_btn:hover {
+    background-color: hsl(39, 100%, 20%);
+}
+
+.orange_btn:active {
+    background-color: hsl(39, 100%, 40%);
+}
+
+.gray_btn {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.gray_btn:hover {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.gray_btn:active {
+    background-color: hsl(0, 0%, 40%);
+}
+
+#powerInfo {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
